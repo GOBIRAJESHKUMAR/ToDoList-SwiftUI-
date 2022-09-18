@@ -23,13 +23,6 @@ class ListViewModel: ObservableObject {
     
     
     func getList() {
-//        let newList = [
-//            ItemModel(name: "Hello", isCompleted: true),
-//            ItemModel(name: "cooking", isCompleted: false),
-//            ItemModel(name: "washing", isCompleted: true)
-//        ]
-//        lists.append(contentsOf: newList)
-        
         guard
             let data = UserDefaults.standard.data(forKey: listKey),
             let savedList = try? JSONDecoder().decode([ItemModel].self, from: data)
@@ -51,12 +44,6 @@ class ListViewModel: ObservableObject {
     }
     
     func updateItem(item: ItemModel){
-//        if let index = lists.firstIndex(where: { (existingItem) in
-//            existingItem.id == item.id
-//        }){
-//            
-//        }
-        
         if let index = lists.firstIndex(where: {$0.id == item.id}) {
             lists[index] = item.update()
         }

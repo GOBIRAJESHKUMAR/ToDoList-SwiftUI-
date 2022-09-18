@@ -17,12 +17,12 @@ struct EmptyListView: View {
         ScrollView {
             VStack(spacing: 10) {
                 Spacer()
-                Text("There are no item's!")
+                Text("Oop's there are no item's!")
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .padding()
                 
-                Text("Let's get started by adding new todo lists to be productivity")
+                Text("Let's get started by adding new todo lists, to be productive")
                     .padding(.bottom, 20)
                 
                 Button {
