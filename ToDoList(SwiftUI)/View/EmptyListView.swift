@@ -9,9 +9,9 @@ import SwiftUI
 
 struct EmptyListView: View {
     
-    @State var isAnimating: Bool = false
+    @State private var isAnimating: Bool = false
     
-    @State var addSomethingPressed: Bool = false
+    @State private var addSomethingPressed: Bool = false
     
     var body: some View {
         ScrollView {

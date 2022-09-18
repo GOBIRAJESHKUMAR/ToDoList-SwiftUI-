@@ -13,9 +13,9 @@ struct AddView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
-    @State var titleTextField: String = ""
-    @State var alertTitle: String = ""
-    @State var showAlert: Bool = false
+    @State private var titleTextField: String = ""
+    @State private var alertTitle: String = ""
+    @State private var showAlert: Bool = false
     
     var body: some View {
         ScrollView {

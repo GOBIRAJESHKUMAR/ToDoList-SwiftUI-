@@ -11,7 +11,7 @@ struct ListView: View {
     
     @EnvironmentObject var listViewModel: ListViewModel
     
-    @State var isAddPressed: Bool = false
+    @State private var isAddPressed: Bool = false
     
     var body: some View {
         
